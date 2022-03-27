@@ -2209,5 +2209,13 @@
     "contractAddress": "0x4691937a7508860f876c9c0a2a617e7d9e945d4b",
     "color": "#1aa13e",
     "coinGeckoId": "woo-network"
+  },
+  "FAU": {
+    "name": "FAU Network",
+    "code": "FAU",
+    "decimals": 18,
+    "contractAddress": "0xFab46E002BbF0b4509813474841E0716E6730136",
+    "color": "#1aa13e",
+    "coinGeckoId": "tether"
   }
 }

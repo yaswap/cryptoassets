@@ -120,6 +120,15 @@ const nativeAssets: AssetMap = {
     coinGeckoId: 'avalanche-2',
     color: '#E84141',
     decimals: 18
+  },
+  YAC: {
+    name: 'Yacoin',
+    chain: ChainId.Yacoin,
+    type: 'native',
+    code: 'YAC',
+    coinGeckoId: 'yacoin',
+    color: '#f7931a',
+    decimals: 6
   }
 }
 

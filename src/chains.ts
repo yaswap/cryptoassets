@@ -7,6 +7,7 @@ import {
   isValidNearAddress,
   isValidSolanaAddress,
   isValidBitcoinCashAddress,
+  isValidYacoinAddress,
   formatBitcoinCashAddress,
   isValidHex,
   isValidSolanaTx,
@@ -200,6 +201,22 @@ const chains: { [key in ChainId]: Chain } = {
     formatAddress: (hexAddress: string) => toChecksumAddress(with0x(hexAddress)),
     isValidTransactionHash: (hash: string) => isValidHex(hash),
     formatTransactionHash: (hash: string) => hash
+  },
+  [ChainId.Yacoin]: {
+    name: 'Yacoin',
+    code: 'YAC',
+    nativeAsset: 'YAC',
+    fees: {
+      unit: 'sat/b'
+    },
+    safeConfirmations: 1,
+    // 1 block per minute * 180 minutes (3 hours) -> 180 blocks wait period
+    txFailureTimeout: 10800000, // 3 hours in ms
+    // TODO: include network types in validation
+    isValidAddress: (address) => isValidYacoinAddress(address),
+    formatAddress: (address) => address,
+    isValidTransactionHash: (hash: string) => isValidHex(hash),
+    formatTransactionHash: (hash: string) => toLowerCaseWithout0x(hash)
   }
 }
 
