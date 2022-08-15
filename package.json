@@ -1,6 +1,6 @@
 {
-  "name": "@liquality/cryptoassets",
-  "version": "1.7.5",
+  "name": "@yac-swap/cryptoassets",
+  "version": "1.0.0",
   "keywords": [
     "blockchain",
     "crypto",
@@ -11,12 +11,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/liquality/cryptoassets.git"
+    "url": "git+ssh://git@github.com/yacswap/cryptoassets.git"
   },
   "bugs": {
-    "url": "https://github.com/liquality/cryptoassets/issues"
+    "url": "https://github.com/yacswap/cryptoassets/issues"
   },
-  "homepage": "https://github.com/liquality/cryptoassets#readme",
+  "homepage": "https://github.com/yacswap/cryptoassets#readme",
   "author": "Liquality <info@liquality.io>",
   "module": "src/index.js",
   "main": "dist/index.cjs.js",
