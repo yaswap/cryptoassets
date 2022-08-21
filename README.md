@@ -3,20 +3,20 @@
 [![Release](https://github.com/liquality/cryptoassets/actions/workflows/release.yml/badge.svg)](https://github.com/liquality/cryptoassets/actions/workflows/release.yml)
 [![Standard Code Style](https://img.shields.io/badge/codestyle-standard-brightgreen.svg)](https://github.com/standard/standard)
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](./LICENSE.md)
-[![Cryptoassets](https://img.shields.io/npm/dt/@yac-swap/cryptoassets.svg)](https://npmjs.com/package/@yac-swap/cryptoassets)
+[![Cryptoassets](https://img.shields.io/npm/dt/@yaswap/cryptoassets.svg)](https://npmjs.com/package/@yaswap/cryptoassets)
 
 Crypto assets data and utilities through a standard inteface
 
 ## Installation
 
 ```bash
-npm install @yac-swap/cryptoassets --save
+npm install @yaswap/cryptoassets --save
 ```
 
 ## Usage
 
 ```
-> const { assets, chains, currencyToUnit } = require('@yac-swap/cryptoassets')
+> const { assets, chains, currencyToUnit } = require('@yaswap/cryptoassets')
 > assets.BTC.code
 BTC
 > assets.ETH.decimals
